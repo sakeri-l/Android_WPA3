@@ -1,9 +1,11 @@
 # Android_WPA3
 1、直接安装APK既可使用，暂时只测试了华为（HarmonyOS 2.0）和小米(Android 11)，安装完成后授予对应的权限（Android版本大于11时，因为Android修改存储机制，需要授予ACTION_MANAGE_ALL_FILES_ACCESS_PERMISSION权限）
+
 2、可以在连接前删除手机已有的profile，这个功能需要授予应用device_owner权限，非测试手机不建议开启（没有此权限不影响测试）
 
 授权：adb shell dpm set-device-owner "com.sakeri.connetc_wifi/.AdminReceiver"
 删除授权：adb shell dpm remove-active-admin "com.sakeri.connetc_wifi/.AdminReceiver"
+
 
 3、小米手机WiFi权限通过Apk只能授予单次运行的权限，需要在设置中手动授予WiFi管理权限为始终允许
 
